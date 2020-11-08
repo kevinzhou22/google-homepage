@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <style>
+            #search-query {
+                width: 100%;
+                border: 0.5px solid rgb(211, 209, 209);
+                height: 35px;
+                border-radius: 15px / 50%;
+            }
+            form button {
+                height: 35px;
+                font-size: 14px;
+                color: #454545;
+                border: none;
+                text-align: center;
+                border-radius: 5px;
+            }
+            form #google-search {
+                width: 130px;
+            }
+            form #feeling-lucky {
+                width: 150px;
+            }
+            .search-wrapper {
+                position: relative;
+                width: 95%;
+                max-width: 600px;
+            }
+            .search-wrapper img {
+                position: absolute;
+                height: 15px;
+                width: auto;
+                top: 50%;
+                transform: translate(0,-50%)
+            }
+            .magnifying-icon {
+                left: 15px;
+            }
+            .microphone-icon {
+                right: 8px;
+            }
+        </style>
+        <title>Google</title>
+    </head>
+    <body>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <form action="">
+            <div class="search-wrapper">
+                <input type="text" name="search-query" id="search-query">
+                <img src="images/magnifying-glass.png" class="magnifying-icon" alt="">
+                <img src="images/microphone.png" class="microphone-icon" alt="">
+            </div>
+            <button type="submit" id="google-search">Google Search</button>
+            <button type="submit" id="feeling-lucky">I'm Feeling Lucky</button>
+        </form>
+    </body>
+</html>
