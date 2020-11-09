@@ -62,79 +62,152 @@
             margin-top: 200px;
         }
 
-        .google-logo,.search-buttons {
+        .google-logo,
+        .search-buttons {
             position: relative;
             left: 50%;
             transform: translateX(-50%);
         }
+
         .search-buttons {
             display: inline-block;
-            
+
         }
+
         .search-buttons #google-search {
             margin-right: 6px;
         }
+
         .top-navbar {
             margin-top: 17px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            font-size:11.5px;
+            font-size: 11.5px;
             position: absolute;
             width: 98.5%;
             left: 50%;
             transform: translateX(-50%);
 
         }
+
         .top-navbar ul {
-            list-style:none;
+            list-style: none;
             display: flex;
             align-items: center;
-        }   
+        }
+
         .top-navbar ul li {
             display: inline-block;
             margin-left: 7.5px;
             margin-right: 7.5px;
         }
-        a {
+
+        .top-navbar a {
             text-decoration: none;
             color: rgb(82, 79, 79);
             font-family: sans-serif;
         }
+
         .grid-icon {
             height: 17px;
             width: 17px;
         }
+
         .sign-in {
             width: 65px;
             height: 27px;
             color: white;
             background-color: #4387fd;
-            border:none;
+            border: none;
             border-radius: 2px;
             font-weight: 550;
             font-size: 12px;
         }
+        .footer {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            bottom: 0px;
+            width: 100%;
+            background-color: rgba(242, 242, 242, 0.952);
+            font-family: sans-serif;
+            height: 65px;
+        }
+        .bottom-navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 98%;
+            height: 50%;
+
+        }
+        .bottom-navbar ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .bottom-navbar ul li {
+            display: inline-block;
+            margin-left: 11.5px;
+            margin-right: 11.5px;
+            font-size: 13px;
+        }
+        .footer a {
+            text-decoration: none;
+            color:rgb(109, 105, 105);
+        }
+        .country {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            height: 50%;
+            width: 98%;
+        }
+        .country p1 {
+            font-family: sans-serif;
+            margin-left: 11.5px;
+            color: rgb(109, 105, 105);
+            font-size: 13px;
+        
+        }
+        .footer hr {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: 1px solid rgb(234, 234, 234);
+        }
+        .footer .footer-top-divider {
+            justify-self: flex-start;
+        }
+        
     </style>
     <title>Google</title>
 </head>
 
 <body>
-    <div class="top-navbar">
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Store</a></li>
+    <header>
+        <nav class="top-navbar">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Store</a></li>
 
-        </ul>
-        <ul>
-            <li><a href="">Gmail</a></li>
-            <li><a href="">Images</a></li>
-            <li><img src="images/grid.png" class="grid-icon" alt="Grid Button"></li>
-            <li><button type="button" class="sign-in">Sign In</button></li>
-        </ul>
-    </div>
-    <div class="search-module">
+            </ul>
+            <ul>
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Images</a></li>
+                <li><img src="images/grid.png" class="grid-icon" alt="Grid Button"></li>
+                <li><button type="button" class="sign-in">Sign In</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="search-module">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo"
             class="google-logo">
         <form action="">
@@ -148,9 +221,28 @@
                 <button type="submit" id="feeling-lucky">I'm Feeling Lucky</button>
             </div>
         </form>
-    </div>
+    </main>
+    <footer class="footer">
+        <hr class="footer-top-divider">
+        <div class="country">
+            <p1>Australia</p1>
+        </div>
+        <hr class="footer-middle-divider">
+        <nav class="bottom-navbar">
+            <ul>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How Search Works</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings </a></li>
+            </ul>
+        </nav>
+    </footer>
 
-    
+
 </body>
 
 </html>
